@@ -1,8 +1,17 @@
 package org.example;
 
-import akka.actor.UntypedActor;
+import akka.actor.AbstractActor;
 
-class Pinger extends UntypedActor {
+import javax.websocket.PongMessage;
+
+class Pinger extends AbstractActor {
+
+    @Override
+    public Receive createReceive() {
+        return receiveBuilder()
+                .match(PongMessage.class, this::onReceive).build();
+    }
+
     static final class PingMessage {
     }
 

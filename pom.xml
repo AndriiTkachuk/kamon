@@ -18,30 +18,42 @@
         <java.version>12</java.version>
     </properties>
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/com.typesafe.akka/akka-actor -->
+<!--        <dependency>-->
+<!--            <groupId>com.typesafe.akka</groupId>-->
+<!--            <artifactId>akka-actor_2.13</artifactId>-->
+<!--            <version>2.6.16</version>-->
+<!--        </dependency>-->
+
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+<!--        <dependency>-->
+<!--            <groupId>io.kamon</groupId>-->
+<!--            <artifactId>kamon-bundle_2.13</artifactId>-->
+<!--            <version>2.4.7</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>io.kamon</groupId>-->
+<!--            <artifactId>kamon-prometheus_2.13</artifactId>-->
+<!--            <version>2.4.7</version>-->
+<!--        </dependency>-->
         <!-- https://mvnrepository.com/artifact/io.kamon/kamon-annotation -->
         <dependency>
             <groupId>io.kamon</groupId>
-            <artifactId>kamon-annotation_2.11</artifactId>
-            <version>${kamon-version}</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/io.kamon/kamon-akka -->
-        <dependency>
-            <groupId>io.kamon</groupId>
-            <artifactId>kamon-akka_2.11</artifactId>
-            <version>${kamon-version}</version>
+            <artifactId>kamon-annotation_2.12</artifactId>
+            <version>0.6.7</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/io.kamon/kamon-log-reporter -->
         <dependency>
             <groupId>io.kamon</groupId>
-            <artifactId>kamon-log-reporter_2.11</artifactId>
-            <version>${kamon-version}</version>
+            <artifactId>kamon-log-reporter_2.12</artifactId>
+            <version>0.6.8</version>
         </dependency>
+
 
     </dependencies>
 
